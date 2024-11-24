@@ -340,14 +340,19 @@ body {
 .intro {
     /* height: 100%; */
     /* background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); */
+    height: 100vh;
     overflow: hidden;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 .parallax-stars {
-    width: 100%;
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 /* Title styling */
@@ -777,6 +782,10 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
     padding-bottom: 250px
 }
 
+#contact_me > img {
+    width: 100%;
+}
+
 #contact_me > h2 {
     margin: 50px 0;
     color: #fcfcfc;
@@ -838,21 +847,28 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
 
 /* === FOOTER === */
 
-footer {
+.footer-container {
+    position: relative;
+  }
+
+
+  
+  footer {
     text-align: center;
     padding: 20px;
     font-size: 22px;
     background-color: aliceblue;
     color: #090A0F;
     padding: 0;
-    position: relative
-}
+    position: relative;
+  }
 
-footer > img {
-    margin-top: 150px!important;
+  footer > img {
+    margin-top: 250px!important;
     width: 100%!important;
     position: absolute!important;
-    bottom: -150px;
+    bottom: 90%;
+    left: 0;
     z-index: 1;
-}
-
+    
+  }
