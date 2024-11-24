@@ -619,7 +619,7 @@ body {
 }
 
 .bg-icon-bottom a {
-    /* padding: 10px; */
+    padding: 0px!important;
     cursor: pointer;
 }
 
