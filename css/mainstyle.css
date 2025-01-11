@@ -775,8 +775,6 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
     min-height: 100vh;
     padding: 50px;
     background-color: #14171f;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgb(226, 204, 186) 55%, rgba(94,202,248,1) 88%, rgba(0,101,255,1) 100%); 
     color: white;
     font-size: 16px;
     padding-bottom: 250px
@@ -823,7 +821,6 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
 }
 
 
-
 ::placeholder {
     color: #999999 !important;
     opacity: 1;
@@ -847,28 +844,10 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
 
 /* === FOOTER === */
 
-.footer-container {
-    position: relative;
-  }
-
-
-  
-  footer {
+footer {
     text-align: center;
     padding: 20px;
     font-size: 22px;
-    background-color: aliceblue;
-    color: #090A0F;
-    padding: 0;
-    position: relative;
-  }
-
-  footer > img {
-    margin-top: 250px!important;
-    width: 100%!important;
-    position: absolute!important;
-    bottom: 90%;
-    left: 0;
-    z-index: 1;
-    
-  }
+    background-color: #000;
+    color: #fff;
+}
