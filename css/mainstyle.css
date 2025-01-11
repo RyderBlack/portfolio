@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Josefin+Sans:ital@1&family=Julius+Sans+One&display=swap');
 @font-face {
     font-family: "Form";
-    src: url("fonts/Form.otf");
+    src: url("./fonts/Form.otf");
 }
 
 @font-face {
     font-family: "Flaticon";
-    src: url("fonts/Flaticon.eot");
-    src: url("fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("fonts/Flaticon.woff") format("woff"), url("fonts/Flaticon.ttf") format("truetype"), url("fonts/Flaticon.svg#Flaticon") format("svg");
+    src: url("./fonts/Flaticon.eot");
+    src: url("./fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("fonts/Flaticon.woff") format("woff"), url("fonts/Flaticon.ttf") format("truetype"), url("fonts/Flaticon.svg#Flaticon") format("svg");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'EthnoFont';
+    src: url('./fonts/ethnocentric_rg.otf'); /* IE9 Compat Modes */
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: "Flaticon";
-        src: url("fonts/Flaticon.svg") format("svg");
+        src: url("./fonts/Flaticon.svg") format("svg");
     }
 }
 
@@ -42,33 +47,30 @@ body {
 
 /* Social Networks icons*/
 
-.fa.fa-linkedin, .fa.fa-github,.fa.fa-instagram, .fa.fa-twitter,.fa.fa-envelope , .email-icon {
+.fa-brands.fa-linkedin, .fa-brands.fa-github,.fa-brands.fa-x-twitter,.fa-solid.fa-envelope , .email-icon {
     /* color: #1b1b1b; */
     color: #fcfcfc;
     font-size: 2.5rem;
 }
 
-.fa.fa-linkedin:hover {
-    color: #00618A;
+.fa-brands.fa-linkedin:hover {
+    color: #0466cf;
 }
 
-.fa.fa-github:hover {
-    color: rgb(98, 0, 175);
+.fa-brands.fa-github:hover {
+    color: rgb(150, 21, 249);
 }
 
-.fa.fa-twitter:hover {
-    color: #4099FF;
+.fa-brands.fa-x-twitter:hover {
+    color: #00aeff;
 }
 
 .email-icon:hover {
     color: red;
 }
 
-.fa.fa-instagram:hover {
-    color: rgb(119, 0, 255);
-}
 
-.fa.fa-linkedin:hover, .fa.fa-github:hover, .fa.fa-twitter:hover, .email-icon:hover {
+.fa-brands.fa-linkedin:hover, .fa-brands.fa-github:hover, .fa-brands.fa-x-twitter:hover, .email-icon:hover {
     -webkit-animation-name: hvr-icon-up;
     animation-name: hvr-icon-up;
     -webkit-animation-duration: 0.75s;
@@ -320,6 +322,7 @@ nav {
   box-shadow: 400px 100px #FFF, 800px 700px #FFF, 1200px 1100px #FFF;
 }
 
+
 /* Star animation */
 @keyframes animStar {
   from {
@@ -332,7 +335,7 @@ nav {
 
 
 body {
-    background-color: #101314;
+    background-color: rgb(16, 19, 20);
 }
 
 /*  == INTRO == */
@@ -353,6 +356,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-color: rgba(16, 19, 32, 0.75);
 }
 
 /* Title styling */
@@ -465,30 +469,49 @@ body {
 /* === ABOUT ME === */
 
 #about_me {
-    padding: 50px;
-    /* border-bottom: .1px solid lightgray; */
-    background-color: #101314;
-    /* -webkit-box-shadow: inset 0px 23px 18px -13px rgb(0, 0, 0);
-    -moz-box-shadow: inset 0px 23px 18px -13px rgb(0, 0, 0);
-    box-shadow: inset 0px 23px 18px -13px rgb(0, 0, 0); */
+    padding: 100px 30px ; 
+    background-color: #0e1017;  
 }
 
 #about_me > h2 {
     color: var(--neon-green);
-    margin-bottom: 30px;
+    margin: 50px 0;
+    font-size: 3rem;
+    font-family: 'EthnoFont';
+}
+
+.layout-container {
+    margin: 0 auto;
 }
 
 .layout {
-    padding: 25px;
+    padding: 15px;
     background-color: #1e202a;
     color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     margin-bottom: 15px;
-    border-radius: 4px
+    border-radius: 4px;
+
+    /* NEOMORPHISM */
+    border-radius: 33px;
+    background: #0e1017;
+    box-shadow:  6px 6px 8px #090a0f,
+             -6px -6px 8px #10111a;
 }
 
 .aboutme-p {
     font-size: 16px;
+}
+
+.neomorph {
+    /* border-radius: 28px;
+background: #1e202a;
+box-shadow: inset 6px 6px 12px #1a1b24,
+            inset -6px -6px 12px #232530; */
+            border-radius: 33px;
+    background: #0e1017;
+    box-shadow: inset 12px 12px 7px #090a0f,
+                inset -12px -2px 7px #10111a;
+            padding: 20px;
 }
 
 .bg-icon-bottom {
@@ -511,7 +534,7 @@ body {
 
 .card {
     margin: 0 auto;
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
 }
 
 .card-container, .front, .back {
@@ -535,7 +558,7 @@ body {
 
 .card .name {
     font-family: 'Josefin Sans'!important;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #fff;
     line-height: 28px;
     margin: 10px 0 0;
@@ -550,15 +573,17 @@ body {
 }
 
 .card .profession {
-    color: #999999;
+    color: #cccccc;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 .card .hire {
-    color: #F50057;
+    color: #ff426b;
     text-align: center;
     margin-top: 20px;
+    font-size: 1.25rem;
 }
 
 .downloadBtn-i {
@@ -660,7 +685,7 @@ body {
 }
 
 .skills-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fcfcfc;
     margin-bottom: 20px;
 }
@@ -682,9 +707,6 @@ body {
 
 /*  Youtube Embed */
 .yt-shorts {
-    max-height: 650px;
-    overflow: scroll;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.25);
     margin: 0 auto;
     margin-bottom: 25px;
     padding: 0;
@@ -701,11 +723,14 @@ body {
 
 #my_work {
     /* border-bottom: .2px solid lightgray; */
-    padding: 50px;
-    background-color: #0e1017 ;
-    background: rgb(16,19,20);
-background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, rgba(0,101,255,1) 100%);
-    color: #fff;
+    padding: 100px 50px;
+    background-color: #e9e9ea;
+    color: #232323;
+}
+
+#my_work > h2 {
+    font-family: 'EthnoFont';
+    font-size: 3rem;
 }
 
 .layout02 {
@@ -718,10 +743,20 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
 }
 
 .panel {
-    backdrop-filter: blur(3px);
-    background-color: rgba(0, 0, 0, 0.0);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 38px;
+    background: #e9e9ea;
+    box-shadow:6px 6px 12px #d1d1d5,
+            -6px -6px 12px #ffffff;  
+        margin: 30px 0;
+}
+
+.neomorph2 {
+    border-radius: 38px;
+    background: #e9e9ea;
+    box-shadow:inset 6px 6px 12px  #dcdce0,
+            inset -6px -6px 12px #f8f8fc;  
+    margin: 30px 0;
+    padding: 20px;
 }
 
 .box-back {
@@ -768,16 +803,16 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
     }
   }
   
+  
 
   /* === CONTACT ME === */
 
 #contact_me {
     min-height: 100vh;
-    padding: 50px;
-    background-color: #14171f;
+    padding: 50px;  
+    background-color: #1e202a;
     color: white;
     font-size: 16px;
-    padding-bottom: 250px
 }
 
 #contact_me > img {
@@ -787,13 +822,16 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
 #contact_me > h2 {
     margin: 50px 0;
     color: #fcfcfc;
+    font-family: 'EthnoFont';
+    font-size: 3rem;
 }
 
 .layout03 {
-    /* background-color: #212534; */
-    background-color: rgba(0, 0, 0, 0.0);
-    backdrop-filter: blur(3px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+background: #1e202a;
+box-shadow:  11px 11px 19px #1a1c24,
+             -11px -11px 19px #222430;
+        
     margin: 0 auto;
     margin-bottom: 25px;
     border-radius: 10px;
@@ -827,17 +865,20 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
 }
 
 .btn-contact {
-    background-color: #222222;
-    border-radius: 25px;
+    border-radius: 12px;
+    background: #1e202a;
     border: 1.5px solid rgb(255, 255, 255);
     color: white;
     font-size: 1.2rem;
     padding: 15px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .btn-contact:hover {
     border: 1.5px solid rgb(255, 255, 255);
     color: #eee;
+    background-color: #04c130;
 }
 
 
@@ -846,8 +887,13 @@ background: linear-gradient(180deg, rgba(16,19,20,1) 55%, rgba(9,9,121,1) 88%, r
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px 0 0 0;
     font-size: 22px;
-    background-color: #000;
-    color: #fff;
+    background-color: #00f539;
+    color: var(--dark-blue);
+}
+
+footer > p {
+    font-family: 'EthnoFont';
+    padding: 0;
 }
