@@ -1,4 +1,4 @@
-# My Portfolio - 2024 Edition
+# My Portfolio - 2025 Edition
 
 Here is my portfolio as a developer and 3D artist, it will be updated very soon.
 
