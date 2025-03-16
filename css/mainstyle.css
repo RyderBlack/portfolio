@@ -901,3 +901,133 @@ footer > p {
     font-family: 'EthnoFont';
     padding: 0;
 }
+
+
+@media (max-width: 1024px) {
+    .container-fluid {
+        padding: 10px;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #title {
+        top: 20%;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .name02 {
+        font-size: 2rem;
+    }
+
+    .scroll-btn {
+        padding-bottom: 10px;
+    }
+
+    #my_work .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .layout02 {
+        width: 45%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        display: block;
+        text-align: center;
+    }
+
+    #about_me, #my_work, #contact_me {
+        padding: 50px 20px;
+    }
+
+    .layout {
+        padding: 10px;
+    }
+
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yt-shorts iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    #my_work .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout02 {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #title {
+        top: 15%;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .name02 {
+        font-size: 1.5rem;
+    }
+
+    .card-container, .skills-item, .panel {
+        width: 100%;
+    }
+
+    .btn-contact {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    #my_work .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout02 {
+        width: 100%;
+        padding: 10px;
+    }
+}
