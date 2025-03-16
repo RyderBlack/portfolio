@@ -794,12 +794,10 @@ box-shadow: inset 6px 6px 12px #1a1b24,
   }
 
   .cardy-2 {
-    border-radius: 38px;
+    border-radius: 38px!important;
   }
 
 
-
-  
   @keyframes spiny {
     0% {
       --rotate: 0deg;
