@@ -783,7 +783,7 @@ box-shadow: inset 6px 6px 12px #1a1b24,
     align-items: center;
     cursor: pointer;
     transform: scale(0.8);
-    filter: blur(3);
+    /* filter: blur(3); */
     background-image: linear-gradient(
       var(--rotate)
       , #5ddcff, #3c67e3 43%, #4e00c2);
@@ -792,6 +792,12 @@ box-shadow: inset 6px 6px 12px #1a1b24,
     animation: spiny 2.5s linear infinite;
     
   }
+
+  .cardy-2 {
+    border-radius: 38px;
+  }
+
+
 
   
   @keyframes spiny {
